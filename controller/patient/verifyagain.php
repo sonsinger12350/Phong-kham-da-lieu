@@ -35,7 +35,7 @@ if(isset($_POST['email']))
 		$mail->Password = ???;          //Sets SMTP password
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     //Sets connection prefix. Options are "", "ssl" or "tls"
 		$mail->Port = 587;                //Sets the default SMTP server port
-		$mail->setFrom('sonle12350@gmail.com', 'Phòng khám da liễu');
+		$mail->setFrom(???, 'Phòng khám da liễu');
 		$mail->addAddress($email);  //Adds a "To" address
 		$mail->WordWrap = 50;           //Sets word wrapping on the body of the message to a given number of characters
 		$mail->isHTML(true);              //Sets message type to HTML
