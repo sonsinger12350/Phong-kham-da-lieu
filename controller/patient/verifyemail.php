@@ -33,11 +33,11 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['pass']))
 		$mail->isSMTP();                //Sets Mailer to send message using SMTP
 		$mail->Host = 'smtp.gmail.com';    //Sets the SMTP hosts of your Email hosting, this for Godaddy   
 		$mail->SMTPAuth = true;             //Sets SMTP authentication. Utilizes the Username and Password variables
-		$mail->Username = 'sonle12350@gmail.com';         //Sets SMTP username
-		$mail->Password = 'Aptx4869';          //Sets SMTP password
+		$mail->Username = ???;         //Sets SMTP username
+		$mail->Password = ???;          //Sets SMTP password
 		$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;     //Sets connection prefix. Options are "", "ssl" or "tls"
 		$mail->Port = 587;                //Sets the default SMTP server port
-		$mail->setFrom('sonle12350@gmail.com', 'Phòng khám da liễu');
+		$mail->setFrom(???, 'Phòng khám da liễu');
 		$mail->addAddress($email);  //Adds a "To" address
 		$mail->WordWrap = 50;           //Sets word wrapping on the body of the message to a given number of characters
 		$mail->isHTML(true);              //Sets message type to HTML
